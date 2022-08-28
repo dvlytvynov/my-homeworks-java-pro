@@ -1,0 +1,24 @@
+https://www.plantuml.com/plantuml/uml/pPRVYfjG4CRlVOh1gmrqVG09PH-aDsLZMy6wa9w5NlIYIVedXO2X5DgBqlHF7y2OIcoYvXNcl56_YIH62AXfBiAYd3Fp-PlFSNHpyq8zxglxvvwXNEKvn9yuuP0N-ZNEAVv2uWqsiNx7CV_1aUaXvnpH5KSS8WFvFiQ97l06oxMUy592aaGqw10o8V-54CHSe2EiOpt6CS0g4fL-QtZE4qNgZlhkqsUAUcxVkLNkdM_OFDjpGPLhPNU0jUdw6gvcy9GZcef8_1LoFNaWHOlS6iN7POPu1NOcJ3btcXVxB2r0SY5tNfIJ4ZimOW6X0M5vPTo2FkL86YjKI6kePxbpwhwIolmRObJka4qcV-CvH7FzGKIuDdxaNqbvmSbGbCyPFipp6la82QRk4gnCzGW5aakmyXFxbGpSILPidYAMOfVjnpOi1kq_Px05-VmlQbvvcJWfT01bE0zjwg9gWrUlqj7nOKTX2iiKjFULRhQrKD-ZzZQQVrI-G90AJmT7MrgheAvbWVC3mINk9DmzdEqiEY-Lu_VCnfHVGe3Hu6J2Tso5iKAY_FXMQIrdlgPmEzXNpY6Eg_yQZa0RAyco7ef9RDv8IKuB_KwzEJgEmO6pRMTS_zQxxpccSOC6uGV0Fm00
+
+@startuml
+title Диаграмма прецедентов (вариантов использования) сайта о путешествиях
+left to right direction
+:Пользватель сайта: -- (Просматривать, прослушивать контент)
+:Пользватель сайта: -- (Зарегистрироваться на сайте)
+:Пользватель сайта: -- (Авторизоваться на сайте)
+(Просматривать, прослушивать контент) <|-- (Фото) : "Обобщение\n(наследование)"
+(Просматривать, прослушивать контент) <|-- (Видео) : "Обобщение\n(наследование)"
+(Просматривать, прослушивать контент) <|-- (Аудио) : "Обобщение\n(наследование)"
+(Просматривать, прослушивать контент) <|-- (Текст) : "Обобщение\n(наследование)"
+:Администратор сайта: -- (Авторизоваться на сайте)
+:Администратор сайта: -- (Просматривать, прослушивать контент)
+:Пользователь интернет: <-- :Пользватель сайта: : "Обобшение\n(примечание)"
+:Пользователь интернет: <-- :Администратор сайта: : "Обобшение\n(примечание)"
+:Пользватель сайта: -- (Изменять контент)
+(Изменять контент) <.. (Создавать) : "extend"
+(Изменять контент) <.. (Удалять) : "extend"
+(Изменять контент) <.. (Редактировать) : "extend"
+:Администратор сайта: -- (Изменять контент)
+:Администратор сайта: -- (Модерировать контент)
+(Модерировать контент) ..> (Информироать пользователя сайта) : "include"
+@enduml

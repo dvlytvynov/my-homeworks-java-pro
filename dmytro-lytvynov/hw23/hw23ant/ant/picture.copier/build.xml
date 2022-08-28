@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="PictureCopier" default="all">
+    <target name="all" description="Execute all targets">
+        <antcall target="clean"/>
+        <antcall target="make.dir"/>
+        <antcall target="copy.pictures"/>
+    </target>
+    <target name="clean" description="Clean directory">
+        <echo>Cleaning directory</echo>
+        <delete dir="../build"/>
+    </target>
+    <target name="make.dir" description="Make a dir">
+        <echo>Creating directory</echo>
+        <mkdir dir="../build"/>
+        <mkdir dir="../build/pictures"/>
+    </target>
+    <target name="copy.pictures" description="Copy pictures">
+        <echo>Copying pictures</echo>
+        <copy todir="../build/pictures">
+            <fileset dir="../../resources" includes="**/*.jpg, **/*.bmp, **/*.png, **/*.tif, **/*.gif"/>
+        </copy>
+    </target>
+</project>

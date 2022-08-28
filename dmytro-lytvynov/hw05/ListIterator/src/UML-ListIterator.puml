@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface +Aggregate{
++ createIterator(): ListIterator
+}
+
+interface +ListIterator{
++ hasNext(): boolean
++ next(): E
++ hasPrevious(): boolean
++ previous(): E
++ nextIndex(): int
++ previousIndex(): int
++ remove()
++ set(E)
++ add(E);
+}
+
+class +MyAggregate {
+- somedata: Object[]
++ createIterator(): ListIterator
+}
+class +MyListIterator {
+- Data: Object[]
+- index: int
++ hasNext(): boolean
++ next(): Object
++ hasPrevious(): boolean
++ previous(): Object
++ nextIndex(): int
++ previousIndex(): int
++ remove()
++ set(Object)
+}
+
+class +GofListIterator {
+~ mydata: Aggregate
+~ iter: ListIterator
+print(Data from "+MyAggregate")
+}
+
+"+Aggregate" <|-- "+MyAggregate"
+"+ListIterator" <|-- "+MyListIterator"
+"+GofListIterator" --> "+MyAggregate"
+"+GofListIterator" --> "+MyListIterator"
+
+
+@enduml

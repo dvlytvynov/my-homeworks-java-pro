@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<class modifiers="1" name="sample.Detail">
+    <name modifiers="2" type="String" value="Object Detail"/>
+    <altName modifiers="130" type="String" value="Detail - version 1"/>
+    <position modifiers="2" type="byte" value="56"/>
+    <quantity modifiers="2" type="short" value="5640"/>
+    <character modifiers="2" type="char" value="@"/>
+    <number modifiers="2" type="int" value="125899"/>
+    <personalCode modifiers="2" type="long" value="102030405060888795"/>
+    <isAvailable modifiers="2" type="boolean" value="true"/>
+    <width modifiers="2" type="float" value="2.456"/>
+    <length modifiers="2" type="double" value="50.23"/>
+</class>

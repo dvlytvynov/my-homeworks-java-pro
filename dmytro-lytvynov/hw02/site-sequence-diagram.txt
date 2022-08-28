@@ -1,0 +1,58 @@
+https://www.plantuml.com/plantuml/uml/nLNHQjH057tFLmnz3n8VfPH-Y2-XcsfWcot9r6SRKHJ4BI888fRY3unjWz5afxzmvuyyTo_6P1pMw8k4fCdCEMVElVVGFQnqMkgpasMaSxtC5BsZbWpTkATuzhYCeZkoxfmwQkYMB5sJSJNUE_UQDho3hrO1OEWRNe6teBXd378lSGC0KklMxdcK7kbLgVRe4a8iy7Kgg1uM8wKzbLRghChAw1GUywFyD2qqo5UktjhRGFG56IRXwneKY_KMeWRhBRM-LfNhBF74Ff2b3P_FJqY5EFS7tnTeGGzfFlfSRCYn0MQwECcBAE82L7mWGkg1elT0tO69rh5k_YJLcUmATZ_-XVq4DM2vFFfEPi1BMueLtfRPiLQhu-qA69UYJ3sUjVW2SrGZcP7HtUuMsVIyFza3mIjeXk6tu5gwLTJXpyssjpBIbfDdeCvHMK-S9fvJnQHW2DmRluffpvDnKQ9x4L1P-wKb_tkmzzWTFZ1Jll7Lp9zrsCIiUGFQk3gIfVX0Kivxdx4Z_o5wwdvQsf48OKgfPVxeCTSgQtyH2XdQVYp4Vqk5SBrOYFAamBcv4CAyO0XuNZ9szUiZTuiQfeclK1O2php3114UUM2KWnu7XS5NP75zSQ-6I99LB2zHbNLSo8Zlhlbz8eTPiS0lqmy0
+
+@startuml
+title Диаграмма последовательности сайта о путешествиях
+actor "Пользователь \n сайта" as user
+participant "Страница \n авторизации сайта" as site1
+participant "Контент \n сайта" as site2
+actor "Администратор \n сайта" as admin
+
+user -> site2 : Запрос
+activate site2
+user <- site2 : Отправка
+activate user
+note left of user: Просмотр \n контента сайта
+user -> site2 : Запрос
+deactivate user
+user <- site2 : Отправка
+deactivate site2
+
+activate user
+note left of user: Ввод логина \n и пароля
+user -> site1 : Запрос на авторизацию
+deactivate user
+activate site1
+user <- site1 : Авторизация
+deactivate site1
+
+user -> site2 : Запрос
+activate site2
+user <- site2 : Отправка
+activate user
+note left of user: Просмотр/изменение \n контента сайта
+user -> site2 : Отправка
+deactivate user
+user <- site2 : Ответ
+site2 -> admin : Уведомление
+deactivate site2
+
+activate admin
+note right of admin: Ввод логина \n и пароля
+site1 <- admin : Запрос на авторизацию
+deactivate admin
+activate site1
+site1 -> admin : Авторизация
+deactivate site1
+
+admin -> site2 : Запрос
+activate site2
+admin <- site2 : Отправка
+activate admin
+note right of admin: Модерация \n контента
+admin -> site2 : Отправка
+admin <- site2 : Ответ
+deactivate site2
+
+admin -> user : Сообщение о размещенном контенте
+deactivate admin
+@enduml

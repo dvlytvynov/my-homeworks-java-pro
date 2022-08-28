@@ -1,0 +1,75 @@
+2022-06-19 22:49:06.147 [main] DEBUG test.logback.TestLogback - TestBacklog.test() starts
+2022-06-19 22:49:06.194 [main] INFO  test.logback.TestLogback - 4 animals has been invited
+2022-06-19 22:49:06.194 [ThreadPool-0] DEBUG animal.Animal - Method run() starts, Tread: ThreadPool-0
+2022-06-19 22:49:06.194 [ThreadPool-0] INFO  animal.Animal - Cat-1, ThreadPool-0
+2022-06-19 22:49:06.210 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:07.023 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:07.245 [ThreadPool-2] DEBUG animal.Animal - Method run() starts, Tread: ThreadPool-2
+2022-06-19 22:49:07.245 [ThreadPool-2] INFO  animal.Animal - Dog-2, ThreadPool-2
+2022-06-19 22:49:07.246 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:07.855 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:07.886 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:08.247 [ThreadPool-4] DEBUG animal.Animal - Method run() starts, Tread: ThreadPool-4
+2022-06-19 22:49:08.247 [ThreadPool-4] INFO  animal.Animal - Racoon-3, ThreadPool-4
+2022-06-19 22:49:08.247 [ThreadPool-4] INFO  animal.Animal - Racoon-3 has eaten
+2022-06-19 22:49:08.465 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:08.699 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:09.073 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:09.261 [ThreadPool-3] DEBUG animal.Animal - Method run() starts, Tread: ThreadPool-3
+2022-06-19 22:49:09.261 [ThreadPool-3] INFO  animal.Animal - Mouse-4, ThreadPool-3
+2022-06-19 22:49:09.261 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:09.354 [ThreadPool-4] INFO  animal.Animal - Racoon-3 has eaten
+2022-06-19 22:49:09.479 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:09.511 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:09.683 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:09.683 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:09.886 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:10.106 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:10.294 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:10.325 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:10.325 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:10.467 [ThreadPool-4] INFO  animal.Animal - Racoon-3 has eaten
+2022-06-19 22:49:10.545 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:10.749 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:10.764 [main] INFO  test.logback.TestLogback - Food remain: 105
+2022-06-19 22:49:10.905 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:10.956 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:11.130 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:11.177 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:11.271 [main] INFO  test.logback.TestLogback - Food remain: 80
+2022-06-19 22:49:11.396 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:11.506 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:11.569 [ThreadPool-4] INFO  animal.Animal - Racoon-3 has eaten
+2022-06-19 22:49:11.600 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:11.787 [main] INFO  test.logback.TestLogback - Food remain: 45
+2022-06-19 22:49:11.804 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:11.960 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:12.008 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:12.117 [ThreadPool-2] INFO  animal.Animal - Dog-2 has eaten
+2022-06-19 22:49:12.210 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:12.304 [main] INFO  test.logback.TestLogback - Food remain: 20
+2022-06-19 22:49:12.414 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:12.617 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:12.679 [ThreadPool-4] INFO  animal.Animal - Racoon-3 has eaten
+2022-06-19 22:49:12.726 [ThreadPool-2] INFO  animal.Animal - Dog-2 has RUN away
+2022-06-19 22:49:12.726 [ThreadPool-2] DEBUG animal.Animal - Method run() finishes, Tread: ThreadPool-2
+2022-06-19 22:49:12.773 [ThreadPool-0] INFO  animal.Animal - Cat-1 has eaten
+2022-06-19 22:49:12.820 [main] INFO  test.logback.TestLogback - Food remain: 0
+2022-06-19 22:49:12.836 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:13.072 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:13.276 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:13.495 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:13.589 [ThreadPool-0] INFO  animal.Animal - Cat-1 has RUN away
+2022-06-19 22:49:13.589 [ThreadPool-0] DEBUG animal.Animal - Method run() finishes, Tread: ThreadPool-0
+2022-06-19 22:49:13.715 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:13.794 [ThreadPool-4] INFO  animal.Animal - Racoon-3 has RUN away
+2022-06-19 22:49:13.794 [ThreadPool-4] DEBUG animal.Animal - Method run() finishes, Tread: ThreadPool-4
+2022-06-19 22:49:13.919 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:14.137 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:14.357 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:14.560 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:14.779 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has eaten
+2022-06-19 22:49:14.827 [main] DEBUG test.logback.TestLogback - Thread pool stops
+2022-06-19 22:49:14.827 [main] DEBUG test.logback.TestLogback - TestBacklog.test() finishes
+2022-06-19 22:49:14.827 [ThreadPool-3] INFO  animal.Animal - Mouse-4 has been DRIVEN while sleeping
+2022-06-19 22:49:14.827 [ThreadPool-3] DEBUG animal.Animal - Method run() interrupted, Tread: ThreadPool-3

@@ -1,0 +1,18 @@
+ClassName=cars.Car
+;
+Fields:
+AnnotationName=Data:
+value=note_name,fieldName=NAME,fieldValue=Red Ford
+value=note_model,fieldName=MODEL,fieldValue=Tourneo Connect
+value=note_average_speed,fieldName=AVERAGE_SPEED,fieldValue=75.8
+value=note_passengers_quantity,fieldName=passengersQuantity,fieldValue=3
+value=note_distance,fieldName=distance,fieldValue=115.8
+value=note_start_time,fieldName=startTime,fieldValue=10.2
+;
+Methods:
+AnnotationName=Action:
+number=2,value=get_car_info,purpose=To get info during journey,methodName=getCarInfo
+number=1,value=start_journey,purpose=To start car journey,methodName=startJourney
+number=3,value=finish_journey,purpose=To move the class into an initial state after journey finish,methodName=finishJourney
+number=4,value=Method,purpose=To do something,methodName=getCarModel
+;

@@ -1,0 +1,13 @@
+class_modifiers,class_name
+1,sample.Detail
+field_modifiers,field_type,field_name,field_value
+2,String,name,Object Detail
+130,String,altName,Detail - version 1
+2,byte,position,56
+2,short,quantity,5640
+2,char,character,@
+2,int,number,125899
+2,long,personalCode,102030405060888795
+2,boolean,isAvailable,true
+2,float,width,2.456
+2,double,length,50.23

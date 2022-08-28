@@ -1,0 +1,29 @@
+https://www.plantuml.com/plantuml/uml/XO_DIWD1383lynJ3dDHX-W3YeSMAU952yG72RjmEp6PAafvatzq9hkkAI6_voVSbsOe2wsKihYiWukER8FiF5rzXn7j_LCuqkBWRMf99NHnGhNLpww8iuVHD7xFYOoL5KfFiGLUIFKh7-Qovqb8qdqtDFWlNlcU6yobtKEoi5rBaT-ZGr8sR5ndQCfjeEApmT42MIb-qzHgOdaR8PTcVTdtFAF9JE9mgpSzEBaH3Wwyf-R3-BYojXyt6XtyE3UutT6ruLjxPjZ_71xT5wYzZ-GG0
+
+@startuml
+class +User {
++RealOS: String
++Age: int
++getName()
++setName()
+}
+class +SiteContent {
++Date: String
++Description: String
++getDate()
++setDate()
+}
+class +GraphicalUserInterface {
++getContent()
++getUserData()
+}
+class -PersonalUserData {
+-Email: String
+-Address: String
+-Phone: int
+}
+"+User" o-- "+SiteContent"
+"+User" <.. "+GraphicalUserInterface"
+"+SiteContent" <.. "+GraphicalUserInterface"
+"+User" *-- "-PersonalUserData"
+@enduml
